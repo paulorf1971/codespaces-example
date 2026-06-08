@@ -7,11 +7,14 @@ jobs:
         steps: 
             - name: Say hello
               run: echo "Started job"
-    echo-goobye_with-error:
+    echo-goodbye:
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - name: Failed
+    #           run: |
+    #                 echo "Failed step failed"
+    #                 exit 1
         runs-on: ubuntu-latest
         steps:
-            - name: Failed
-              run: |
-                    echo "Failed step failed"
-                    exit 1
-
+            - name: Say goodbye
+              run: echo "Goodbye"
