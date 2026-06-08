@@ -10,10 +10,10 @@ jobs:
               run: echo "Started job"
     echo-goobye_with-error:
         runs-on: ubuntu-latest
-        name: goodbye with error
+        name: Failed
         steps:
             - name: Failed
-            - run: |
-                echo "Exist with error step failed"
+              run: |
+                echo "Failed step failed"
                 exit 1
 
