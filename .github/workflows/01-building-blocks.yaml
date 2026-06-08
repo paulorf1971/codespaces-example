@@ -4,16 +4,14 @@ on: push
 jobs:
     echo-hello:
         runs-on: ubuntu-latest
-        name: echo-hello
         steps: 
             - name: Say hello
               run: echo "Started job"
     echo-goobye_with-error:
         runs-on: ubuntu-latest
-        name: Failed
         steps:
             - name: Failed
               run: |
-                echo "Failed step failed"
-                exit 1
+                    echo "Failed step failed"
+                    exit 1
 
