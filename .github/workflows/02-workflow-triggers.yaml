@@ -1,10 +1,10 @@
 name: 02 - Worflow Triggers
 on:
-    push:
-    pull_request:
+    # push:
+    # pull_request:
     workflow_dispatch:
-    schedule:
-        - cron: "*/5 * * * *"
+    # schedule:
+    #     - cron: "*/5 * * * *"
 
 jobs:
     echo:
