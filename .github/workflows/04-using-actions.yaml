@@ -11,8 +11,8 @@ jobs:
             #   with:
             #     path: main
 
-            - name: Printing folders
-              run: ls
+            - name: Setup node version
+              uses: actions/setup-node@v4
 
             # 1. Install dependencies of our react app
         
