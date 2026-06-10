@@ -1,0 +1,19 @@
+name: 04 - Using Actions
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            # 0. Checkout code
+            - name: Checkout Code
+              uses: actions/checkout@v4
+              with:
+                path: main
+
+            - name: Printing folders
+              run: ls
+
+            # 1. Install dependencies of our react app
+        
+            # 2. Execute automated tests
