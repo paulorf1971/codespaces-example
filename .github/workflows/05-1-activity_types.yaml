@@ -1,0 +1,11 @@
+name: 05-1 Activity Type
+on: 
+    pull_request: 
+        main:
+
+jobs:
+    activity_type:
+        runs-on: ubuntu-linux
+        steps:
+            - name: Create activity type
+              run: npm ci
