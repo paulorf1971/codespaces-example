@@ -11,4 +11,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Create activity type
-              run: echo "Running whenever a PR is opened and synchronized AND base branch is main"
+              run: echo "Running whenever a PR is closed AND base branch is main"
