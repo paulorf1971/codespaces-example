@@ -9,8 +9,8 @@ on:
             default: false
 
 env:
-  MY_WORKFLOW_VAR = 'Workflow variable'
-  MY_WORKFLOW_OVERWRITTEN_VAR = 'Overwritten variable'
+  MY_WORKFLOW_VAR: 'Workflow variable'
+  MY_WORKFLOW_OVERWRITTEN_VAR: 'Overwritten variable'
 
 jobs:
     echo-data:
