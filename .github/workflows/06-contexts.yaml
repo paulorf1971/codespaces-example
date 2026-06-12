@@ -37,12 +37,13 @@ jobs:
               env:
                 MY_WORKFLOW_OVERWRITTEN_VAR: 'new job overwritten variable'
               run: |
-                echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
-                echo "Oberwritten env: ${{env.MY_WORKFLOW_OVERWRITTEN_VAR}}"
+                echo "Workflow env var: ${{env.MY_WORKFLOW_VAR}}"
+                echo "Overwritten env var: ${{env.MY_WORKFLOW_OVERWRITTEN_VAR}}"
             
             - name: Print Environment Variables with no local env
               run: |
-                echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
-                echo "Oberwritten env: ${{env.MY_WORKFLOW_OVERWRITTEN_VAR}}"
+                echo "Workflow env var: ${{env.MY_WORKFLOW_VAR}}"
+                echo "Overwritten env var: ${{env.MY_WORKFLOW_OVERWRITTEN_VAR}}"
+                echo "Job env var: ${{env.MY_WORKFLOW_OVERWRITTEN_VAR}}"
 
 
