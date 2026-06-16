@@ -1,14 +1,12 @@
 name: 07 - Expressions
 on:
-    push: 
+    # push: 
     workflow_dispatch:
         inputs:
             debug:
                 type: boolean
                 default: false
                 description: Debug
-
-
 
 jobs:
     echo:
