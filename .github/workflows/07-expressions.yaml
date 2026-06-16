@@ -12,6 +12,8 @@ jobs:
     echo:
         runs-on: ubuntu-latest
         steps:
+            - name: Sleep for 20 seconds
+              run: sleep 20
             - name: '[debug] Print Start-up'
               if: ${{ inputs.debug }}
               run: |
