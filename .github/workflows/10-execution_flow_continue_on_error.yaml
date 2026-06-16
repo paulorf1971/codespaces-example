@@ -1,4 +1,4 @@
-name: 10 - Execution Flow with 'need'
+name: 10 - Execution Flow with 'need' and continue on error
 on:
     workflow_dispatch:
         inputs:
