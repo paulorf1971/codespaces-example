@@ -6,4 +6,4 @@ Now I have introduced a new edit.
 
 This is a edition for triggering workflow on open and close PRs.
 
-Lesson 9: edited to show PR information using functions (Lesson 10). -> Now it was edited again.
+Lesson 9: edited to show PR information using functions (Lesson 10). -> Now it edit was fixed.
