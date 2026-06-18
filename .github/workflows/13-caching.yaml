@@ -117,7 +117,7 @@ jobs:
                 # specifies the file that controls hash for changes on dependencies files, 
                 # i.e, if something changed within this file, cache has to be reloaded
                 # key: deps-node-modules-${{ hashFiles('13-caching/react-app/package-lock.json') }}
-                key: ${{ needs.install-deps.outputs.deps-cache-key ) }}
+                key: ${{ needs.install-deps.outputs.deps-cache-key }}
 
             - name: Install Dependencies
               if : ${{ steps.cache.outputs.cache-hit != 'true' }}          
