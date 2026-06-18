@@ -77,7 +77,7 @@ jobs:
               id: cache
               with:
                 path: 13-caching/react-app/node_modules
-                key: ${{ needs.install-deps.outputs.deps-cache-key ) }}
+                key: ${{ needs.install-deps.outputs.deps-cache-key }}
 
             - name: Install Dependencies
               if : ${{ steps.cache.outputs.cache-hit != 'true' }}          
@@ -89,9 +89,6 @@ jobs:
 
             - name: Linting
               run: echo "Linting..."
-
-            - name: Deploying to Non-Prod environment
-              run: echo "Deploying to Non-Prod..."              
 
     build:
         runs-on: ubuntu-latest 
