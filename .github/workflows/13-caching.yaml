@@ -10,11 +10,12 @@ on:
                 description: Node Version
                 type: choice
                 options:
-                  - 18.x
-                  - 20.x
+                  - 20.x                  
                   - 21.x
+                  - 22.x
+                  - 23.x
                   - 24.x
-                default: 20.x
+                default: 24.x
 jobs:
     build:
         runs-on: ubuntu-latest        
